@@ -1,0 +1,417 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    " - " : {
+
+    },
+    "%@" : {
+
+    },
+    "%@ - %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ - %2$@"
+          }
+        }
+      }
+    },
+    "%@ Playoffs" : {
+
+    },
+    "%@ Standings" : {
+
+    },
+    "a1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In certain situations, the iOS won't detect freshly installed apps immediately. Please allow some time before Footbalify becomes available. You can also restart the phone which usually resolves the issue immediately."
+          }
+        }
+      }
+    },
+    "a2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This is also iOS related issue that will disappear after small amount of time. You can restart the phone and remove/add Widget again, which usually resolves the issue immediately."
+          }
+        }
+      }
+    },
+    "a3" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Make sure internet connection is ON. Widgets will retrieve latest data from remote server. Alternatively remove and add Widgets again, latest data will be retrieved immediately."
+          }
+        }
+      }
+    },
+    "a4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Footbalify utilises phone's timezone, meaning all of the times are displayed in timezone set via system settings."
+          }
+        }
+      }
+    },
+    "About" : {
+
+    },
+    "C: P%@" : {
+
+    },
+    "C: P%@ | %@ %%" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "C: P%1$@ | %2$@ %%"
+          }
+        }
+      }
+    },
+    "CARD" : {
+
+    },
+    "CHAMP" : {
+
+    },
+    "Circular Widget Countdown to upcoming Super Bowl" : {
+
+    },
+    "Circular Widget with specific Team's NFL Standings" : {
+
+    },
+    "CONF" : {
+
+    },
+    "DIV" : {
+
+    },
+    "DIVISION LEADER" : {
+
+    },
+    "FAQ" : {
+
+    },
+    "Foobalify %@" : {
+
+    },
+    "FOOTBALIFY" : {
+
+    },
+    "Footbalify is the ultimate app for NFL enthusiasts, offering comprehensive access to the latest schedules and standings. It provides up to date game details, including dates and times, making it easy to stay updated on all the action. Users can effortlessly track their favorite teams' performance with up-to-date standings for all NFL divisions and conferences. \n\nThe app also features customizable Widgets for both Home Screen and Lock Screen, offering at-a-glance information on upcoming games and current standings. With a sleek and user-friendly interface, Footbalify ensures navigating through NFL schedules and standings is a seamless experience.\n\nFootbalify is designed to enhance the overall NFL experience, providing quick, reliable updates and ensuring fans never miss a moment of their favorite sport." : {
+
+    },
+    "FUNDING" : {
+
+    },
+    "Hello, World!" : {
+
+    },
+    "home" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        }
+      }
+    },
+    "How to add a Widget?" : {
+
+    },
+    "HS1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touch and Hold on Home Screen until apps start to jiggle."
+          }
+        }
+      }
+    },
+    "HS2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap on the plus (+) button in top corner."
+          }
+        }
+      }
+    },
+    "HS3" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search for the \\\"Footbalify\\\"."
+          }
+        }
+      }
+    },
+    "HS4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select Widget and tap on \\\"Add Widget\\\" button."
+          }
+        }
+      }
+    },
+    "HS5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(Optional) Tap on the Widget for further configuration."
+          }
+        }
+      }
+    },
+    "HS6" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configure Widget according to own preference."
+          }
+        }
+      }
+    },
+    "HS7" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap on the Home Screen to save Widget."
+          }
+        }
+      }
+    },
+    "Large Widget with weekly updated schedule" : {
+
+    },
+    "Large Widgets" : {
+
+    },
+    "Leave a rating" : {
+
+    },
+    "LS1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touch and Hold on Lock Screen until \\\"Customize\\\" button appears."
+          }
+        }
+      }
+    },
+    "LS2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap on the \\\"Customize\\\" button."
+          }
+        }
+      }
+    },
+    "LS3" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select \\\"Footbalify\\\" from Widgets."
+          }
+        }
+      }
+    },
+    "LS4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose any Widget by a tap."
+          }
+        }
+      }
+    },
+    "LS5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(Optional) Tap on the Widget for further configuration."
+          }
+        }
+      }
+    },
+    "LS6" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configure Widget according to own preference."
+          }
+        }
+      }
+    },
+    "LS7" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap on the \\\"Done\\\" button in top corner to save Widget."
+          }
+        }
+      }
+    },
+    "Medium Widget with Team's Standings during Regular Season" : {
+
+    },
+    "Medium Widget with upcoming Team's schedule" : {
+
+    },
+    "Medium Widgets" : {
+
+    },
+    "NFL AFC/NFC Division Leader Team" : {
+
+    },
+    "NFL AFC/NFC Division Leaders" : {
+
+    },
+    "NFL Conference Playoffs Large Widget" : {
+
+    },
+    "NFL Conference Playoffs Medium Widget" : {
+
+    },
+    "NFL Playoff Road to Super Bowl LIX" : {
+
+    },
+    "q1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "There is no Footbalify app in Widgets, why?"
+          }
+        }
+      }
+    },
+    "q2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widgets are displayed black with no content, why?"
+          }
+        }
+      }
+    },
+    "q3" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widgets are displaying incorrect data, how to refresh them?"
+          }
+        }
+      }
+    },
+    "q4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What timezone is used for displaying match schedule?"
+          }
+        }
+      }
+    },
+    "Rectangular Widget with specific Team's NFL Standings" : {
+
+    },
+    "Rectangular Widget with specific Team's Weekly schedule" : {
+
+    },
+    "RND" : {
+
+    },
+    "Schedule" : {
+
+    },
+    "Settings" : {
+
+    },
+    "Small Widget Countdown to upcoming Super Bowl" : {
+
+    },
+    "Small Widget with Team's Standings during Regular Season" : {
+
+    },
+    "Small Widget with upcoming Team's schedule" : {
+
+    },
+    "Small Widgets" : {
+
+    },
+    "Standings" : {
+
+    },
+    "Support Footbalify" : {
+
+    },
+    "V" : {
+
+    },
+    "Widgets" : {
+
+    },
+    "Widgets Setup" : {
+
+    },
+    "WILD" : {
+
+    }
+  },
+  "version" : "1.0"
+}

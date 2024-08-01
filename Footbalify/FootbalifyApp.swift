@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct FootbalifyApp: App {
+    @StateObject private var factory = Factory()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+                .environmentObject(factory)
         }
     }
 }

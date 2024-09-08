@@ -20,5 +20,8 @@ struct Endpoints {
         "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2024&seasontype=\(regSeason ? "2" : "3")&week=\(week)"
     }
 
-    
+    /// Static property providing Standings Endpoint
+    static var standings: String {
+        "https://site.web.api.espn.com/apis/v2/sports/football/nfl/standings?season=2024"
+    }
 }

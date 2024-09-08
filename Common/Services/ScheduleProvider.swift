@@ -41,6 +41,23 @@ protocol ScheduleProviderProto {
     ///
     ///  - Returns: `ScheduleTitle` value with current week
     func getCurrWeek() -> ScheduleTitle
+
+    /// Method responsible for decoding Data into collection of `Event` schedule
+    ///
+    ///  - Parameters:
+    ///     - data: Data that will be decoded
+    ///
+    ///  - Returns: Decoded collection of `Event` type describing Schedule
+    func getScheduleFromData(data: Data) -> [Event]
+
+    /// Helper method reponsible for obtaining current week's NFL Schedule
+    ///
+    ///  - Parameters:
+    ///     - week: Value of `ScheduleTitle` type defining NFL Week
+    ///
+    ///  - Returns: Collection of `Event` type defining week's Schedule -
+    ///  Either Persisted in UserDefault's - or if found empty, Found in Default Bundled JSON file
+    func getFallbackSchedule(week: ScheduleTitle) -> [Event]
 }
 
 /// Implementation of NFL Schedule Provider Protocol
@@ -54,6 +71,25 @@ struct ScheduleProvider: ScheduleProviderProto {
             Logger.generic.error("\(error)")
             return []
         }
+    }
+
+    func getScheduleFromData(data: Data) -> [Event] {
+        do {
+            let decodedJson: ScheduleScoreboard = try JSONDecoder.decodeJson(data: data)
+            return decodedJson.events
+        } catch {
+            Logger.generic.error("\(error)")
+            return []
+        }
+    }
+
+    func getFallbackSchedule(week: ScheduleTitle) -> [Event] {
+        let storedSchedule = UserDefaults.getValue(for: week.toDefaultKey, defaultValue: Data())
+        let schedule = getScheduleFromData(data: storedSchedule)
+        guard !schedule.isEmpty else {
+            return getDefaultSchedule(week: week)
+        }
+        return schedule
     }
 
     func transformSchedule(schedule: [Event]) -> [MatchInfo] {

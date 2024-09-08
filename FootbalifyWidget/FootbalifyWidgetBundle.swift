@@ -57,5 +57,6 @@ struct WidgetBundle4: WidgetBundle {
 struct WidgetBundle5: WidgetBundle {
     var body: some Widget {
         LockMdTeamStandingsWidget()
+        LockMdTeamScheduleWidget()
     }
 }

@@ -39,7 +39,7 @@ struct ScheduleProviderFull: TimelineProvider {
     ///  - Returns: Tuple - 0 - Current Week, 1 - Current week's Schedule
     func getCurrWeekDetails() -> (ScheduleTitle, [MatchInfo]) {
         let currWeek = provider.getCurrWeek()
-        let defaultSchedule = provider.getDefaultSchedule(week: currWeek)
+        let defaultSchedule = provider.getFallbackSchedule(week: currWeek)
         return (currWeek, provider.transformSchedule(schedule: defaultSchedule))
     }
 }
@@ -85,7 +85,7 @@ struct ScheduleProviderTeam: IntentTimelineProvider {
     ///  - Returns: Tuple - 0 - Current Week, 1 - Last match's Date
     func getCurrWeekDetails() -> (ScheduleTitle, Date) {
         let currWeek = provider.getCurrWeek()
-        let defaultSchedule = provider.getDefaultSchedule(week: currWeek)
+        let defaultSchedule = provider.getFallbackSchedule(week: currWeek)
         return (currWeek, provider.transformSchedule(schedule: defaultSchedule).last?.matchDate ?? Date())
     }
 }

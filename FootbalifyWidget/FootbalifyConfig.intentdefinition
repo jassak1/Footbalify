@@ -525,7 +525,7 @@
 					<key>INIntentParameterConfigurable</key>
 					<true/>
 					<key>INIntentParameterDisplayName</key>
-					<string>Conference</string>
+					<string>Select Conference</string>
 					<key>INIntentParameterDisplayNameID</key>
 					<string>yycLPk</string>
 					<key>INIntentParameterDisplayPriority</key>
@@ -626,7 +626,7 @@
 					<key>INIntentParameterConfigurable</key>
 					<true/>
 					<key>INIntentParameterDisplayName</key>
-					<string>Division Team</string>
+					<string>Select Division</string>
 					<key>INIntentParameterDisplayNameID</key>
 					<string>I1u8fe</string>
 					<key>INIntentParameterDisplayPriority</key>

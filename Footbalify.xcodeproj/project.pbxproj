@@ -29,7 +29,6 @@
 		9A0DDEF52C44F4C50076C2D3 /* RegWeek10.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ADF4D252C4007DE00BE5EF9 /* RegWeek10.json */; };
 		9A0DDEF62C44F4C50076C2D3 /* RegWeek9.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ADF4D292C4007DE00BE5EF9 /* RegWeek9.json */; };
 		9A0DDEF72C44F4C50076C2D3 /* RegWeek12.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ADF4D2D2C4007DE00BE5EF9 /* RegWeek12.json */; };
-		9A0DDEF82C44F4C50076C2D3 /* TestFile.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ADF4D4F2C401A9800BE5EF9 /* TestFile.json */; };
 		9A0DDEF92C44F4C50076C2D3 /* RegWeek8.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ADF4D2B2C4007DE00BE5EF9 /* RegWeek8.json */; };
 		9A0DDEFA2C44F4C50076C2D3 /* RegWeek4.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ADF4D222C4007DE00BE5EF9 /* RegWeek4.json */; };
 		9A0DDEFB2C44F4C50076C2D3 /* RegWeek17.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ADF4D1C2C4007DD00BE5EF9 /* RegWeek17.json */; };
@@ -142,6 +141,8 @@
 		9AAC03532C4699DE0090F2F8 /* DivisionLeaderWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC03512C4699DE0090F2F8 /* DivisionLeaderWidget.swift */; };
 		9AAC03552C46AD9B0090F2F8 /* PlayoffWidget3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC03542C46AD9B0090F2F8 /* PlayoffWidget3.swift */; };
 		9AAC03562C46AD9B0090F2F8 /* PlayoffWidget3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC03542C46AD9B0090F2F8 /* PlayoffWidget3.swift */; };
+		9ABB2C102C8D990300980944 /* Standings24.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ABB2C0F2C8D990300980944 /* Standings24.json */; };
+		9ABB2C112C8D990300980944 /* Standings24.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ABB2C0F2C8D990300980944 /* Standings24.json */; };
 		9AC7F4D62C5A95E8002CFED0 /* Standings23.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AC7F4D52C5A95E8002CFED0 /* Standings23.json */; };
 		9AC7F4D72C5A95E8002CFED0 /* Standings23.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AC7F4D52C5A95E8002CFED0 /* Standings23.json */; };
 		9AC7F4DC2C5A98C5002CFED0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC7F4DB2C5A98C5002CFED0 /* NetworkService.swift */; };
@@ -167,6 +168,10 @@
 		9AD440012C45AC2400240903 /* ConferenceExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD43FFF2C45AC2400240903 /* ConferenceExt.swift */; };
 		9AD440032C45B1A800240903 /* PlayoffWidget2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD440022C45B1A800240903 /* PlayoffWidget2.swift */; };
 		9AD440042C45B1A800240903 /* PlayoffWidget2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD440022C45B1A800240903 /* PlayoffWidget2.swift */; };
+		9AD615772C70972800D37BE8 /* IapVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD615762C70972800D37BE8 /* IapVM.swift */; };
+		9AD615782C70972800D37BE8 /* IapVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD615762C70972800D37BE8 /* IapVM.swift */; };
+		9AD6157A2C709EC600D37BE8 /* IapService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD615792C709EC600D37BE8 /* IapService.swift */; };
+		9AD6157B2C709EC600D37BE8 /* IapService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD615792C709EC600D37BE8 /* IapService.swift */; };
 		9AD62FD22C550A570075EC66 /* HelpWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD62FD12C550A570075EC66 /* HelpWidgetView.swift */; };
 		9AD62FD32C5510380075EC66 /* HelpWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD62FD12C550A570075EC66 /* HelpWidgetView.swift */; };
 		9ADDAB462C41381B00C31180 /* MatchInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADDAB452C41381B00C31180 /* MatchInfo.swift */; };
@@ -203,7 +208,6 @@
 		9ADF4D4A2C400CA500BE5EF9 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF4D492C400CA500BE5EF9 /* UserDefaults.swift */; };
 		9ADF4D4C2C400D5300BE5EF9 /* DefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF4D4B2C400D5300BE5EF9 /* DefaultKey.swift */; };
 		9ADF4D4E2C400EF400BE5EF9 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF4D4D2C400EF400BE5EF9 /* Bundle.swift */; };
-		9ADF4D502C401A9800BE5EF9 /* TestFile.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ADF4D4F2C401A9800BE5EF9 /* TestFile.json */; };
 		9ADF4D522C401AFB00BE5EF9 /* ScheduleScoreboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF4D512C401AFB00BE5EF9 /* ScheduleScoreboard.swift */; };
 		9ADF4D542C40455300BE5EF9 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF4D532C40455300BE5EF9 /* ScheduleView.swift */; };
 		9ADF4D562C4053FD00BE5EF9 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF4D552C4053FD00BE5EF9 /* DateFormatter.swift */; };
@@ -257,6 +261,7 @@
 		9A1A22C62C501B3000FBF73F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		9A1A22C92C501B4000FBF73F /* SettingsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVM.swift; sourceTree = "<group>"; };
 		9A1B0D5D2C3D987A005A234D /* OptionallyHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionallyHidden.swift; sourceTree = "<group>"; };
+		9A516D9D2C5E62FF00B39407 /* FootbalifyWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FootbalifyWidgetExtension.entitlements; sourceTree = "<group>"; };
 		9A52DFA22C4A44AF00BE5B3B /* LockMdTeamSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockMdTeamSchedule.swift; sourceTree = "<group>"; };
 		9A605F032C46EF3800DB6FA8 /* ScheduleFullWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleFullWidget.swift; sourceTree = "<group>"; };
 		9A605F062C46F9B600DB6FA8 /* ScheduleProviderFull.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleProviderFull.swift; sourceTree = "<group>"; };
@@ -289,6 +294,7 @@
 		9AAC034E2C4692FF0090F2F8 /* DivisionLeadersWidget2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionLeadersWidget2.swift; sourceTree = "<group>"; };
 		9AAC03512C4699DE0090F2F8 /* DivisionLeaderWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionLeaderWidget.swift; sourceTree = "<group>"; };
 		9AAC03542C46AD9B0090F2F8 /* PlayoffWidget3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayoffWidget3.swift; sourceTree = "<group>"; };
+		9ABB2C0F2C8D990300980944 /* Standings24.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Standings24.json; sourceTree = "<group>"; };
 		9AC7F4D52C5A95E8002CFED0 /* Standings23.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Standings23.json; sourceTree = "<group>"; };
 		9AC7F4DB2C5A98C5002CFED0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		9ACC6F5C2C43C0630049564A /* StandingsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsProvider.swift; sourceTree = "<group>"; };
@@ -302,6 +308,8 @@
 		9ACFB45E2C4307200033BCB1 /* StandingsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsInfo.swift; sourceTree = "<group>"; };
 		9AD43FFF2C45AC2400240903 /* ConferenceExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceExt.swift; sourceTree = "<group>"; };
 		9AD440022C45B1A800240903 /* PlayoffWidget2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayoffWidget2.swift; sourceTree = "<group>"; };
+		9AD615762C70972800D37BE8 /* IapVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IapVM.swift; sourceTree = "<group>"; };
+		9AD615792C709EC600D37BE8 /* IapService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IapService.swift; sourceTree = "<group>"; };
 		9AD62FD12C550A570075EC66 /* HelpWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpWidgetView.swift; sourceTree = "<group>"; };
 		9ADDAB452C41381B00C31180 /* MatchInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchInfo.swift; sourceTree = "<group>"; };
 		9ADDAB472C41388E00C31180 /* ScheduleVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleVM.swift; sourceTree = "<group>"; };
@@ -338,7 +346,6 @@
 		9ADF4D492C400CA500BE5EF9 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		9ADF4D4B2C400D5300BE5EF9 /* DefaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultKey.swift; sourceTree = "<group>"; };
 		9ADF4D4D2C400EF400BE5EF9 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
-		9ADF4D4F2C401A9800BE5EF9 /* TestFile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestFile.json; sourceTree = "<group>"; };
 		9ADF4D512C401AFB00BE5EF9 /* ScheduleScoreboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleScoreboard.swift; sourceTree = "<group>"; };
 		9ADF4D532C40455300BE5EF9 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		9ADF4D552C4053FD00BE5EF9 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
@@ -489,6 +496,7 @@
 			isa = PBXGroup;
 			children = (
 				9AC7F4D52C5A95E8002CFED0 /* Standings23.json */,
+				9ABB2C0F2C8D990300980944 /* Standings24.json */,
 			);
 			path = Standings;
 			sourceTree = "<group>";
@@ -546,6 +554,7 @@
 		9AFB3B402C3C32000079F284 = {
 			isa = PBXGroup;
 			children = (
+				9A516D9D2C5E62FF00B39407 /* FootbalifyWidgetExtension.entitlements */,
 				9AFB3B5B2C3C32560079F284 /* Common */,
 				9AFB3B4B2C3C32000079F284 /* Footbalify */,
 				9ACC6F6A2C4426770049564A /* FootbalifyWidget */,
@@ -618,6 +627,7 @@
 			isa = PBXGroup;
 			children = (
 				9ACC6F5C2C43C0630049564A /* StandingsProvider.swift */,
+				9AD615792C709EC600D37BE8 /* IapService.swift */,
 				9A0DDEDF2C44F3B00076C2D3 /* ScheduleProvider.swift */,
 				9AC7F4DB2C5A98C5002CFED0 /* NetworkService.swift */,
 			);
@@ -627,7 +637,6 @@
 		9AFB3B5F2C3C328B0079F284 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9ADF4D4F2C401A9800BE5EF9 /* TestFile.json */,
 				9ADF4D192C4007C300BE5EF9 /* JSON */,
 				9ADF4D182C4007B700BE5EF9 /* Swift */,
 				9AFB3B502C3C32020079F284 /* Assets.xcassets */,
@@ -701,6 +710,7 @@
 				9A1A22C62C501B3000FBF73F /* SettingsView.swift */,
 				9A1A22C92C501B4000FBF73F /* SettingsVM.swift */,
 				9A95935E2C58168900801E32 /* IapView.swift */,
+				9AD615762C70972800D37BE8 /* IapVM.swift */,
 			);
 			path = "Settings View";
 			sourceTree = "<group>";
@@ -787,11 +797,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ACC6F8A2C44403C0049564A /* Montserrat-SemiBoldItalic.ttf in Resources */,
-				9A0DDEF82C44F4C50076C2D3 /* TestFile.json in Resources */,
 				9ACC6F882C44403C0049564A /* Montserrat-ExtraBold.ttf in Resources */,
 				9ACC6F872C44403C0049564A /* Montserrat-Regular.ttf in Resources */,
 				9A0DDEE42C44F4C50076C2D3 /* RegWeek15.json in Resources */,
 				9A0DDEF22C44F4C50076C2D3 /* WildCard.json in Resources */,
+				9ABB2C112C8D990300980944 /* Standings24.json in Resources */,
 				9A0DDEEC2C44F4C50076C2D3 /* RegWeek11.json in Resources */,
 				9A0DDEFB2C44F4C50076C2D3 /* RegWeek17.json in Resources */,
 				9A0DDF1A2C452E8D0076C2D3 /* SuperBowl23.json in Resources */,
@@ -829,12 +839,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ADF4D502C401A9800BE5EF9 /* TestFile.json in Resources */,
 				9ADF4D3A2C4007DE00BE5EF9 /* RegWeek14.json in Resources */,
 				9A0DDF152C452E8D0076C2D3 /* DivisionalRound23.json in Resources */,
 				9A0DDF192C452E8D0076C2D3 /* SuperBowl23.json in Resources */,
 				9ADF4D362C4007DE00BE5EF9 /* RegWeek18.json in Resources */,
 				9A7321532C3D1561004FC504 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				9ABB2C102C8D990300980944 /* Standings24.json in Resources */,
 				9ADF4D302C4007DE00BE5EF9 /* WildCard.json in Resources */,
 				9ADF4D382C4007DE00BE5EF9 /* RegWeek4.json in Resources */,
 				9ADF4D402C4007DE00BE5EF9 /* DivisionalRound.json in Resources */,
@@ -917,6 +927,7 @@
 				9A0DDF272C4543CB0076C2D3 /* ScheduleVM.swift in Sources */,
 				9A7370F52C49357C003CF873 /* TeamStandingsProvider.swift in Sources */,
 				9AD440042C45B1A800240903 /* PlayoffWidget2.swift in Sources */,
+				9AD6157B2C709EC600D37BE8 /* IapService.swift in Sources */,
 				9A0DDF1E2C4543960076C2D3 /* WeekDates.swift in Sources */,
 				9A67B94E2C52DAA5007190DB /* SubWidgetView.swift in Sources */,
 				9A0DDF282C4543CD0076C2D3 /* StandingsView.swift in Sources */,
@@ -940,6 +951,7 @@
 				9A843B192C48073A0094D718 /* TeamScheduleMdWidget.swift in Sources */,
 				9A605F082C46F9B600DB6FA8 /* ScheduleProviderFull.swift in Sources */,
 				9A0DDF0A2C44F9CC0076C2D3 /* DefaultKey.swift in Sources */,
+				9AD615782C70972800D37BE8 /* IapVM.swift in Sources */,
 				9A0DDF2D2C45469E0076C2D3 /* Factory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -990,6 +1002,7 @@
 				9ADDAB522C4169D500C31180 /* WeekDates.swift in Sources */,
 				9A7370F42C49357C003CF873 /* TeamStandingsProvider.swift in Sources */,
 				9AD440032C45B1A800240903 /* PlayoffWidget2.swift in Sources */,
+				9AD6157A2C709EC600D37BE8 /* IapService.swift in Sources */,
 				9A7321592C3D2824004FC504 /* Font.swift in Sources */,
 				9A67B94D2C52DAA2007190DB /* SubWidgetView.swift in Sources */,
 				9ADF4D4A2C400CA500BE5EF9 /* UserDefaults.swift in Sources */,
@@ -1013,6 +1026,7 @@
 				9A843B182C48073A0094D718 /* TeamScheduleMdWidget.swift in Sources */,
 				9A605F072C46F9B600DB6FA8 /* ScheduleProviderFull.swift in Sources */,
 				9AFB3B632C3C32B50079F284 /* MainView.swift in Sources */,
+				9AD615772C70972800D37BE8 /* IapVM.swift in Sources */,
 				9A0DDF2C2C45469E0076C2D3 /* Factory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1033,6 +1047,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = FootbalifyWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 474645CHKF;
@@ -1062,6 +1077,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = FootbalifyWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 474645CHKF;
@@ -1218,6 +1234,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Footbalify/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Footbalify;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1251,6 +1269,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Footbalify/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Footbalify;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

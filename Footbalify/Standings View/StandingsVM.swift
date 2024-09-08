@@ -25,7 +25,7 @@ class StandingsVM: ObservableObject {
     ///     - selection: `StandingsType` value indicating what sort of Standings to be displayed
     func displayStandings(selection: StandingsType) {
         standingSelection = selection
-        let rawStandings = standingsProvider.getDefaultStandings()
+        let rawStandings = standingsProvider.getFallbackStandings()
         switch selection {
         case .division:
             standingsActual.removeAll()
@@ -98,7 +98,7 @@ class StandingsVM: ObservableObject {
     ///
     ///  - Returns: Collection of `MatchInfo` holding NFL Schedule
     func getSchedule(week: ScheduleTitle, conference: Divisions) -> [MatchInfo] {
-        let baseSchedule = scheduleProvider.getDefaultSchedule(week: week)
+        let baseSchedule = scheduleProvider.getFallbackSchedule(week: week)
         return scheduleProvider.getSchedule(baseSchedule: baseSchedule,
                                             week: week,
                                             conference: conference)

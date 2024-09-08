@@ -24,7 +24,7 @@ class WidgetVM: ObservableObject {
     ///
     ///  - Returns: Collection of `MatchInfo` holding NFL Schedule
     func getSchedule(week: ScheduleTitle, conference: Divisions) -> [MatchInfo] {
-        let baseSchedule = scheduleProvider.getDefaultSchedule(week: week)
+        let baseSchedule = scheduleProvider.getFallbackSchedule(week: week)
         return scheduleProvider.getSchedule(baseSchedule: baseSchedule,
                                             week: week,
                                             conference: conference)
@@ -37,7 +37,7 @@ class WidgetVM: ObservableObject {
     ///
     ///  - Returns: NFL `Teams` team that has been crowned Conference's champion
     func getConferenceChampion(conference: Divisions) -> Teams {
-        let baseSchedule = scheduleProvider.getDefaultSchedule(week: .superBowl)
+        let baseSchedule = scheduleProvider.getFallbackSchedule(week: .superBowl)
         let transformedSchedule = scheduleProvider.transformSchedule(schedule: baseSchedule)
         return transformedSchedule.map {
             if $0.team1.conference == conference {
@@ -91,7 +91,7 @@ class WidgetVM: ObservableObject {
     ///
     ///  - Returns: Collection of `StandingsInfo` objects
     func getStandings(for division: Divisions) -> [StandingsInfo] {
-        let rawStandings = standingsProvider.getDefaultStandings()
+        let rawStandings = standingsProvider.getFallbackStandings()
         return standingsProvider.getStandings(for: division, standings: rawStandings)
     }
 
@@ -102,7 +102,7 @@ class WidgetVM: ObservableObject {
     ///
     ///  - Returns: `StandingsInfo` object with data of top team in a division
     func getDivisionLeader(for division: Divisions) -> StandingsInfo {
-        let rawStandings = standingsProvider.getDefaultStandings()
+        let rawStandings = standingsProvider.getFallbackStandings()
         let transformedStandings = standingsProvider.getStandings(for: division, standings: rawStandings)
         return transformedStandings.first ?? .demoInfo
     }
@@ -115,7 +115,7 @@ class WidgetVM: ObservableObject {
     ///
     ///  - Returns: Collection of a weekly schedule associated with specific NFL Team
     func getTeamsSchedule(team: NFLTeam, week: ScheduleTitle) -> [MatchInfo] {
-        let baseSchedule = scheduleProvider.getDefaultSchedule(week: week)
+        let baseSchedule = scheduleProvider.getFallbackSchedule(week: week)
         let transformedSchedule = scheduleProvider.transformSchedule(schedule: baseSchedule)
         return transformedSchedule.filter {
             $0.team1 == team.toTeam ||
@@ -130,7 +130,7 @@ class WidgetVM: ObservableObject {
     ///
     ///  - Returns: `StandingsInfo` object associated with specific team
     func getTeamStandings(team: Teams) -> StandingsInfo {
-        let rawStandings = standingsProvider.getDefaultStandings()
+        let rawStandings = standingsProvider.getFallbackStandings()
         return standingsProvider.getTeamStandings(team: team, standings: rawStandings)
     }
 

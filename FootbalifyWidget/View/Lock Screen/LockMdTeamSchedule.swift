@@ -51,7 +51,7 @@ struct LockMdTeamScheduleView: View {
 }
 
 // MARK: - Widget
-struct LockMdTeamSchedule: Widget {
+struct LockMdTeamScheduleWidget: Widget {
     let kind: String = WidgetKind.lockTeamScheduleMd.rawValue
 
     var body: some WidgetConfiguration {
@@ -84,7 +84,7 @@ struct LockMdTeamSchedule: Widget {
 // MARK: - Preview
 @available(iOS, introduced: 17.0)
 #Preview(as: .accessoryRectangular) {
-    LockMdTeamSchedule()
+    LockMdTeamScheduleWidget()
 } timeline: {
     ScheduleFullEntry(date: Date(),
                       team: .dolphins,

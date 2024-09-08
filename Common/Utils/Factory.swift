@@ -16,10 +16,13 @@ class Factory: ObservableObject {
     private let scheduleProvider: ScheduleProviderProto
     /// Network Service Instance
     private let networkService: NetworkServiceProto
+    /// Iap Service Instance
+    private let iapService: IapServiceProto
 
     // MARK: - Public methods
     func makeScheduleVm() -> ScheduleVM {
-        ScheduleVM(scheduleProvider: scheduleProvider)
+        ScheduleVM(scheduleProvider: scheduleProvider,
+                   networkService: networkService)
     }
 
     func makeStandingsVm() -> StandingsVM {
@@ -35,10 +38,15 @@ class Factory: ObservableObject {
         SettingsVM()
     }
 
+    func makeIapVm() -> IapVM {
+        IapVM(iapService: iapService)
+    }
+
     // MARK: - Initialiser
     init() {
         standingsProvider = StandingsProvider()
         scheduleProvider = ScheduleProvider()
         networkService = NetworkService()
+        iapService = IapService()
     }
 }

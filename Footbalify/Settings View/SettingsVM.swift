@@ -18,6 +18,8 @@ class SettingsVM: ObservableObject {
     let xUrl = URL(string: "https://twitter.com/FootbalifyApp")!
     /// Current App's Version
     let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? String()
+    /// Boolean observer indicating whether modal sheet shall be displayed
+    @Published var showSheet = false
 }
 
 /// Custom enum with possible values of Settings Navigation Path

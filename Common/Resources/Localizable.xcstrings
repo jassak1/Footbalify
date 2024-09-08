@@ -4,6 +4,9 @@
     " - " : {
 
     },
+    "/ DevSupport" : {
+
+    },
     "%@" : {
 
     },
@@ -21,6 +24,9 @@
 
     },
     "%@ Standings" : {
+
+    },
+    "|" : {
 
     },
     "a1" : {
@@ -63,6 +69,39 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Footbalify utilises phone's timezone, meaning all of the times are displayed in timezone set via system settings."
+          }
+        }
+      }
+    },
+    "a5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Once the 2024 NFL Season will Kick off, the 2024 Standings will be provided."
+          }
+        }
+      }
+    },
+    "a6" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Most likely the Match Times have been updated recently for specific week. Please tap on the specific week and pull down the list in order to retrieve latest Schedule."
+          }
+        }
+      }
+    },
+    "a7" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please tap on the specific week from a past and pull down the list in order to retrieve Match Results."
           }
         }
       }
@@ -117,9 +156,6 @@
 
     },
     "FUNDING" : {
-
-    },
-    "Hello, World!" : {
 
     },
     "home" : {
@@ -323,6 +359,15 @@
     "NFL Playoff Road to Super Bowl LIX" : {
 
     },
+    "OK" : {
+
+    },
+    "Privacy policy" : {
+
+    },
+    "Purchase succesfull!" : {
+
+    },
     "q1" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -367,6 +412,39 @@
         }
       }
     },
+    "q5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Standings Data are from 2023 Season, how to display 2024 Season?"
+          }
+        }
+      }
+    },
+    "q6" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schedule is displaying incorrect Match Times, why?"
+          }
+        }
+      }
+    },
+    "q7" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schedule is missing the Match Results for previous games, why?"
+          }
+        }
+      }
+    },
     "Rectangular Widget with specific Team's NFL Standings" : {
 
     },
@@ -398,6 +476,9 @@
 
     },
     "Support Footbalify" : {
+
+    },
+    "Terms of use" : {
 
     },
     "V" : {

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ScheduleView: View {
     @StateObject private var vm: ScheduleVM
+    @EnvironmentObject private var factory: Factory
     var body: some View {
         NavigationStack {
             List {
@@ -30,10 +31,23 @@ struct ScheduleView: View {
                 .scrollIndicators(.hidden)
                 .navigationTitle("Schedule")
                 .refreshable {
-                   // TODO: - Add data fetch
+                    vm.loadWeekSchedule(week: vm.selectedWeek)
                 }
                 .scrollContentBackground(.hidden)
                 .background(Color(.colorMainBg))
+                .toolbar {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button(action: {
+                            vm.showSheet = true
+                        }, label: {
+                            Image(systemName: "figure.american.football")
+                                .tint(.orange)
+                        })
+                    }
+                }
+                .sheet(isPresented: $vm.showSheet) {
+                    IapView(vm: factory.makeIapVm())
+                }
         }
     }
 
@@ -125,5 +139,7 @@ struct ScheduleView: View {
 }
 
 #Preview {
-    ScheduleView(vm: ScheduleVM(scheduleProvider: ScheduleProvider()))
+    ScheduleView(vm: ScheduleVM(scheduleProvider: ScheduleProvider(),
+                                networkService: NetworkService()))
+    .environmentObject(Factory())
 }

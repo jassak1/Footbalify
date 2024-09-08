@@ -12,10 +12,14 @@ import OSLog
 class ScheduleVM: ObservableObject {
     /// Schedule Provider Service reference
     var scheduleProvider: ScheduleProviderProto
+    /// Network Service reference
+    var networkService: NetworkServiceProto
     /// Observable property holding all Matches for selected Week
     @Published var selectedSchedule = [Dictionary<Date, [MatchInfo]>.Element]()
     /// Observable property holding currently selected NFL Schedule week
     @Published var selectedWeek: ScheduleTitle = .week1
+    /// Boolean observer indicating whether to display InApp Screen's sheet
+    @Published var showSheet = false
 
     // MARK: - Private methods
     /// Method responsible for loading Week's Schedule/Scores
@@ -23,11 +27,44 @@ class ScheduleVM: ObservableObject {
     ///  - Parameters:
     ///     - week: Selected NFL week
     func loadWeekSchedule(week: ScheduleTitle) {
-        print(week.rawValue)
         selectedWeek = week
-        let baseSchedule = scheduleProvider.getDefaultSchedule(week: week)
-        let groupedSchedule = groupSchedule(schedule: baseSchedule)
+        let fallbackSchedule = scheduleProvider.getFallbackSchedule(week: week)
+        let groupedSchedule = groupSchedule(schedule: fallbackSchedule)
         selectedSchedule = groupedSchedule
+        Task { @MainActor in
+            await storeNetworkSchedule(week: week)
+            let fallbackSchedule = scheduleProvider.getFallbackSchedule(week: week)
+            let groupedSchedule = groupSchedule(schedule: fallbackSchedule)
+            selectedSchedule = groupedSchedule
+            try await Task.sleep(nanoseconds: 2_000_000_000)
+            await storeStandings()
+        }
+    }
+
+    /// Helper method reponsible for persisting Schedule of specific NFL Week obtained from Remote Endpoint
+    ///
+    ///  - Parameters:
+    ///     - week: Value of `ScheduleTitle` type defining NFL Week
+    private func storeNetworkSchedule(week: ScheduleTitle) async {
+        let defaultKey = week.toDefaultKey
+        let networkData = await networkService.getData(from: Endpoints.scheduleScoreboard(regSeason: week.isRegSeason,
+                                                                                          week: week.toWeekNum))
+        guard !networkData.isEmpty else {
+            return
+        }
+        UserDefaults.setValue(for: defaultKey, value: networkData)
+    }
+
+    /// Helper method responsible for persisting Standings data obtained from Remote Endpoint
+    private func storeStandings() async {
+        let defaultKey = DefaultKey.standings
+        let networkData = await networkService.getData(from: Endpoints.standings)
+
+        guard !networkData.isEmpty else {
+            return
+        }
+
+        UserDefaults.setValue(for: defaultKey, value: networkData)
     }
 
     /// Private method responsible for grouping Schedule into Dictionary Array. Key indicates Date of a match,
@@ -68,8 +105,10 @@ class ScheduleVM: ObservableObject {
     }
 
     // MARK: Initialiser
-    init(scheduleProvider: ScheduleProviderProto) {
+    init(scheduleProvider: ScheduleProviderProto,
+         networkService: NetworkServiceProto) {
         self.scheduleProvider = scheduleProvider
+        self.networkService = networkService
         loadCurrWeek()
     }
 }

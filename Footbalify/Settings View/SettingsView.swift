@@ -12,6 +12,7 @@ import StoreKit
 struct SettingsView: View {
     @StateObject private var vm: SettingsVM
     @Environment(\.requestReview) private var requestReview
+    @EnvironmentObject private var factory: Factory
     var body: some View {
         NavigationStack(path: $vm.navPath) {
             ZStack {
@@ -24,6 +25,9 @@ struct SettingsView: View {
                             .background(.atlantaFalcons)
                             .clipShape(RoundedRectangle(cornerRadius: 10))
                             .font(.extra20)
+                            .onTapGesture {
+                                vm.showSheet = true
+                            }
                     }, header: {
                         Text("FUNDING")
                             .font(.semiCustom(15))
@@ -42,7 +46,7 @@ struct SettingsView: View {
                             labelItem(label: "E-mail",
                                       icon: "envelope.fill",
                                       withArrow: false,
-                                      handle: "footbalify@mail.com")
+                                      handle: "footbalify@proton.me")
                         })
                         Link(destination: vm.xUrl,
                              label: {
@@ -81,6 +85,9 @@ struct SettingsView: View {
                 }
             }
             .navigationTitle("Settings")
+            .sheet(isPresented: $vm.showSheet) {
+                IapView(vm: factory.makeIapVm())
+            }
         }
     }
 
@@ -136,6 +143,8 @@ struct SettingsView: View {
             listItem(q: "q2", a: "a2")
             listItem(q: "q3", a: "a3")
             listItem(q: "q4", a: "a4")
+            listItem(q: "q6", a: "a6")
+            listItem(q: "q7", a: "a7")
         }.navigationTitle("FAQ")
             .scrollIndicators(.hidden)
         
@@ -161,4 +170,5 @@ struct SettingsView: View {
 
 #Preview {
     SettingsView(vm: SettingsVM())
+        .environmentObject(Factory())
 }

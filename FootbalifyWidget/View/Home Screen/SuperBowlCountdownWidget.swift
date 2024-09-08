@@ -14,6 +14,9 @@ struct SuperBowlCountdownWidgetView: View {
     let entry: PlayoffEntry
     var body: some View {
         ZStack {
+            if #unavailable(iOS 17.0) {
+                Color.colorMainBg.ignoresSafeArea()
+            }
             VStack {
                 Image(.superBowlLogo)
                     .resizable()

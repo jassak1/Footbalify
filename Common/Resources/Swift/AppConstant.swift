@@ -22,10 +22,13 @@ enum AppConstant: String {
     case footballIcon = "football"
     case gridironIcon = "sportscourt"
     case gearIcon = "gearshape"
-
+    case iapIcon = "aqi.medium"
+    case tcUrl = "https://github.com/Footbalify/Footbalify/blob/main/TermsAndConditions.md"
+    case privacyUrl = "https://github.com/Footbalify/Footbalify/blob/main/PrivacyPolicy.md"
+    case iapProductId = "DevelopmentSupport"
+    case cartIcon = "cart"
 
     // MARK: - JSON
-    case testFile = "TestFile.json"
     case wildCard = "WildCard.json"
     case superBowl = "SuperBowl.json"
     case conferenceChampionships = "ConferenceChampionships.json"
@@ -48,5 +51,5 @@ enum AppConstant: String {
     case regWeek16 = "RegWeek16.json"
     case regWeek17 = "RegWeek17.json"
     case regWeek18 = "RegWeek18.json"
-    case standings = "Standings23.json"
+    case standings = "Standings24.json"
 }

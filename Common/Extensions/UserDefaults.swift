@@ -26,6 +26,6 @@ extension UserDefaults {
     ///     - key: `DefaultKey` associated with persisted value
     ///     - value: Value that will be persisted
     static func setValue<T>(for key: DefaultKey, value: T) {
-        UserDefaults.setValue(value, forKey: key.rawValue)
+        UserDefaults.sharedSuite?.setValue(value, forKey: key.rawValue)
     }
 }

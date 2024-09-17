@@ -97,7 +97,7 @@ struct PlayoffWidget1: Widget {
                         Color.black
                         Image(.superBowlLogo)
                             .resizable()
-                            .scaledToFit()
+                            .scaledToFill()
                         LinearGradient(colors: [.colorMainBg,
                                                 .colorMainBg.opacity(0.8)],
                                        startPoint: .bottomTrailing,

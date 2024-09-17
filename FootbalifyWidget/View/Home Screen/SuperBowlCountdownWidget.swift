@@ -21,6 +21,7 @@ struct SuperBowlCountdownWidgetView: View {
                 Image(.superBowlLogo)
                     .resizable()
                     .scaledToFit()
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
                 Text("\(Date.superBowlDate, style: .relative)")
                     .font(.extraCustom(15))
                     .fixedSize(horizontal: false,

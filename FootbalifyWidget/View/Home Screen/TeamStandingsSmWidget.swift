@@ -41,6 +41,7 @@ struct TeamStandingsSmWidgetView: View {
                 Image(vm.getTeamLogo(team: teamStanding.team))
                     .resizable()
                     .scaledToFit()
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
             }
         }.foregroundStyle(.white)
             .dynamicTypeSize(.medium)

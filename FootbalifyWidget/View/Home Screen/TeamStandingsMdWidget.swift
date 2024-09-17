@@ -31,7 +31,7 @@ struct TeamStandingsMdWidgetView: View {
                             .font(.extraItalicCustom(15))
                             .foregroundStyle(teamStanding.team.conference == .mainAfc ? .red : .blue)
                     }
-                    Text(teamStanding.team.fullName)
+                    Text(teamStanding.team.rawValue.uppercased())
                         .font(.extra10)
                     Text("C: P\(teamStanding.position) | \(teamStanding.percentage) %")
                         .font(.semi10)
@@ -43,6 +43,7 @@ struct TeamStandingsMdWidgetView: View {
                 Image(vm.getTeamLogo(team: teamStanding.team))
                     .resizable()
                     .scaledToFit()
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
                     .shadow(color: .black,
                             radius: 30)
             }

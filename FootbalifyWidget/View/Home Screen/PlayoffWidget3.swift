@@ -39,14 +39,16 @@ struct PlayoffWidget3View: View {
                             Text(verbatim: "1")
                                 .font(.extraItalic20)
                                 .padding(.leading, 10)
-                            Text(vm.getDivisionLeader(for: entry.conference.toDivision).team.fullName)
+                            Text(vm.getDivisionLeader(for: entry.conference.toDivision).team.rawValue.uppercased())
                                 .fixedSize(horizontal: true, vertical: false)
                                 .font(.extraItalicCustom(15))
                             Spacer()
                             Image(vm.getTeamLogo(team: vm.getDivisionLeader(for: entry.conference.toDivision).team))
                                 .resizable()
                                 .scaledToFit()
+                                .clipShape(RoundedRectangle(cornerRadius: 5))
                                 .padding(.trailing, 5)
+                                .padding(2)
                         }
                     )
                 LazyVGrid(columns: [GridItem(),
@@ -67,10 +69,15 @@ struct PlayoffWidget3View: View {
                                         .frame(maxWidth: .infinity,
                                                alignment: .leading)
                                         .padding(.leading, 10)
+                                    Text(standing.team.abbrevName)
+                                        .font(.extraCustom(7))
+                                        .rotationEffect(.degrees(270))
                                     Image(vm.getTeamLogo(team: standing.team))
                                         .resizable()
                                         .scaledToFit()
+                                        .clipShape(RoundedRectangle(cornerRadius: 5))
                                         .padding(.trailing, 5)
+                                        .padding(2)
                                 }
                             )
                     }

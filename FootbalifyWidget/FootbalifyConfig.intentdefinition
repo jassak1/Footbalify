@@ -173,7 +173,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Baltimore Ravens</string>
+					<string>Ravens</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>Uac01S</string>
 					<key>INEnumValueIndex</key>
@@ -183,7 +183,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Pittsburgh Steelers</string>
+					<string>Steelers</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>ffdhJv</string>
 					<key>INEnumValueIndex</key>
@@ -193,7 +193,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Indianapolis Colts</string>
+					<string>Colts</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>RIHYKA</string>
 					<key>INEnumValueIndex</key>
@@ -203,7 +203,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Houston Texans</string>
+					<string>Texans</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>GdLWZR</string>
 					<key>INEnumValueIndex</key>
@@ -213,7 +213,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Tennessee Titans</string>
+					<string>Titans</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>NhOWxH</string>
 					<key>INEnumValueIndex</key>
@@ -223,7 +223,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Jacksonville Jaguars</string>
+					<string>Jaguars</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>dL6mtD</string>
 					<key>INEnumValueIndex</key>
@@ -233,7 +233,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Detroit Lions</string>
+					<string>Lions</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>Q3VZOs</string>
 					<key>INEnumValueIndex</key>
@@ -243,7 +243,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Minnesota Vikings</string>
+					<string>Vikings</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>tSZdWP</string>
 					<key>INEnumValueIndex</key>
@@ -253,7 +253,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>New Orleans Saints</string>
+					<string>Saints</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>9BwGLo</string>
 					<key>INEnumValueIndex</key>
@@ -263,7 +263,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Atlanta Falcons</string>
+					<string>Falcons</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>U77Zyo</string>
 					<key>INEnumValueIndex</key>
@@ -273,7 +273,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>New England Patriots</string>
+					<string>Patriots</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>6WDUxU</string>
 					<key>INEnumValueIndex</key>
@@ -283,7 +283,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>New York Jets</string>
+					<string>Jets</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>IUF2pN</string>
 					<key>INEnumValueIndex</key>
@@ -293,7 +293,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Carolina Panthers</string>
+					<string>Panthers</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>dUnHC9</string>
 					<key>INEnumValueIndex</key>
@@ -303,7 +303,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Tampa Bay Buccaneers</string>
+					<string>Buccaneers</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>xCtFO9</string>
 					<key>INEnumValueIndex</key>
@@ -313,7 +313,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Cincinnati Bengals</string>
+					<string>Bengals</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>4Sza3U</string>
 					<key>INEnumValueIndex</key>
@@ -323,7 +323,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Cleveland Browns</string>
+					<string>Browns</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>s7RegH</string>
 					<key>INEnumValueIndex</key>
@@ -333,7 +333,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Green Bay Packers</string>
+					<string>Packers</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>z7pELD</string>
 					<key>INEnumValueIndex</key>
@@ -343,7 +343,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Chicago Bears</string>
+					<string>Bears</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>Z1uaJh</string>
 					<key>INEnumValueIndex</key>
@@ -353,7 +353,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Washington Commanders</string>
+					<string>Commanders</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>XVyphF</string>
 					<key>INEnumValueIndex</key>
@@ -363,7 +363,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Dallas Cowboys</string>
+					<string>Cowboys</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>lGLFz0</string>
 					<key>INEnumValueIndex</key>
@@ -373,7 +373,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Las Vegas Raiders</string>
+					<string>Raiders</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>xx7juo</string>
 					<key>INEnumValueIndex</key>
@@ -383,7 +383,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Denver Broncos</string>
+					<string>Broncos</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>VpfJ9P</string>
 					<key>INEnumValueIndex</key>
@@ -393,7 +393,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>New York Giants</string>
+					<string>Giants</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>OwL3vk</string>
 					<key>INEnumValueIndex</key>
@@ -403,7 +403,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Philadelphia Eagles</string>
+					<string>Eagles</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>JtUmlD</string>
 					<key>INEnumValueIndex</key>
@@ -413,7 +413,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Arizona Cardinals</string>
+					<string>Cardinals</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>7BQpws</string>
 					<key>INEnumValueIndex</key>
@@ -423,7 +423,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Seattle Seahawks</string>
+					<string>Seahawks</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>ls0BgD</string>
 					<key>INEnumValueIndex</key>
@@ -433,7 +433,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>San Francisco 49ers</string>
+					<string>49ers</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>BFR6JS</string>
 					<key>INEnumValueIndex</key>
@@ -443,7 +443,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Los Angeles Rams</string>
+					<string>Rams</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>uhdOSu</string>
 					<key>INEnumValueIndex</key>
@@ -453,7 +453,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Los Angeles Chargers</string>
+					<string>Chargers</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>Lk2eKz</string>
 					<key>INEnumValueIndex</key>
@@ -463,7 +463,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Kansas City Chiefs</string>
+					<string>Chiefs</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>oDFAXR</string>
 					<key>INEnumValueIndex</key>
@@ -473,7 +473,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Miami Dolphins</string>
+					<string>Dolphins</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>aprKFp</string>
 					<key>INEnumValueIndex</key>
@@ -483,7 +483,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Buffalo Bills</string>
+					<string>Bills</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>3o42qh</string>
 					<key>INEnumValueIndex</key>

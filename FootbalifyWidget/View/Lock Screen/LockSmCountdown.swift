@@ -17,6 +17,7 @@ struct LockSmCountdownView: View {
             Image(.superBowlLogo)
                 .resizable()
                 .scaledToFit()
+                .clipShape(RoundedRectangle(cornerRadius: 10))
                 .opacity(0.4)
             Text("\(Date.superBowlDate, style: .relative)")
                 .font(.extra10)

@@ -69,7 +69,8 @@ struct SuperBowlWidgetView: View {
             Image(.superBowlLogo)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 50)
+                .frame(width: 35)
+                .clipShape(RoundedRectangle(cornerRadius: 5))
                 .frame(maxHeight: .infinity,
                        alignment: .top)
         }.dynamicTypeSize(.medium)
@@ -77,16 +78,21 @@ struct SuperBowlWidgetView: View {
 
     // MARK: - SubViews
     func bracketView(team: Teams) -> some View {
-        Image("\(team.fullName) \(AppConstant.logo.rawValue)")
-            .resizable()
-            .scaledToFit()
-            .frame(width: 30)
-            .padding(.horizontal, 5)
-            .overlay(
-                RoundedRectangle(cornerRadius: 5)
-                    .stroke(lineWidth: 2)
-                    .foregroundStyle(Color("\(team.fullName) \(AppConstant.color.rawValue)"))
-            )
+        VStack {
+            Image("\(team.fullName) \(AppConstant.logo.rawValue)")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 30)
+                .padding(.horizontal, 5)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 5)
+                        .stroke(lineWidth: 2)
+                        .foregroundStyle(Color("\(team.fullName) \(AppConstant.color.rawValue)"))
+                )
+            Text(team.abbrevName)
+                .font(.extraCustom(8))
+                .foregroundStyle(.white)
+        }
     }
 }
 

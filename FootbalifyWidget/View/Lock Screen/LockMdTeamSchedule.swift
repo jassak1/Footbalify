@@ -20,6 +20,7 @@ struct LockMdTeamScheduleView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 20)
+                        .clipShape(RoundedRectangle(cornerRadius: 5))
                     Spacer()
                     Text(entry.currWeek.rawValue)
                         .font(.extraItalic10)

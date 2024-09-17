@@ -42,6 +42,8 @@ struct DivisionLeadersWidget2View: View {
                                     Image(vm.getTeamLogo(team: standing.team))
                                         .resizable()
                                         .scaledToFit()
+                                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                                        .padding(.vertical, 3)
                                     Text(standing.team.rawValue.uppercased())
                                         .font(.extra20)
                                 }.frame(maxWidth: .infinity,

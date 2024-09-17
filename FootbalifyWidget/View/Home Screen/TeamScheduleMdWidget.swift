@@ -22,6 +22,7 @@ struct TeamScheduleMdWidgetView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 25)
+                    .clipShape(RoundedRectangle(cornerRadius: 5))
                 Text(entry.currWeek.rawValue)
             }
             .frame(maxWidth: .infinity,

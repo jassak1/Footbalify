@@ -34,7 +34,7 @@ struct DivisionLeaderWidgetView: View {
                     }
                 }
                 VStack(spacing: 0) {
-                    Text(entryTeam.team.fullName)
+                    Text(entryTeam.team.rawValue.uppercased())
                         .font(.extra10)
                     Text("\(entryTeam.wins) - \(entryTeam.loses)")
                         .font(.regItalic10)
@@ -43,6 +43,7 @@ struct DivisionLeaderWidgetView: View {
                         .scaledToFit()
                         .padding(5)
                         .scaleEffect(1.2)
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
                 }
             }
         }.foregroundStyle(.white)

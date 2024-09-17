@@ -40,6 +40,7 @@ struct LockMdTeamStandingsView: View {
                 Image(vm.getTeamLogo(team: teamStanding.team))
                     .resizable()
                     .scaledToFit()
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
                     .shadow(color: .black,
                             radius: 30)
             }
@@ -84,5 +85,5 @@ struct LockMdTeamStandingsWidget: Widget {
     LockMdTeamStandingsWidget()
 } timeline: {
     TeamStandingsEntry(date: Date(),
-                       nflTeam: .chiefs)
+                       nflTeam: .jaguars)
 }

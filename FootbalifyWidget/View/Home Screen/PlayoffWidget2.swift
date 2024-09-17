@@ -37,6 +37,7 @@ struct PlayoffWidget2View: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 50)
+                .clipShape(RoundedRectangle(cornerRadius: 5))
                 .frame(maxWidth: .infinity,
                        maxHeight: .infinity,
                        alignment: .topTrailing)

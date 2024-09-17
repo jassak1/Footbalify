@@ -22,6 +22,7 @@ struct TeamScheduleSmWidgetView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 25)
+                    .clipShape(RoundedRectangle(cornerRadius: 5))
                 Spacer()
                 Text(entry.currWeek.rawValue)
                     .fixedSize(horizontal: true,
@@ -48,7 +49,7 @@ struct TeamScheduleSmWidgetView: View {
                             teamLabelView(team: schedule.team2,
                                           rotate: true)
                         }
-                    }
+                    }.padding(.top, 5)
                 }
             }
         }
@@ -64,30 +65,31 @@ struct TeamScheduleSmWidgetView: View {
     ///     - rotate: Boolean flag indicating whether label color shall be mirrored
     func teamLabelView(team: Teams,
                        rotate: Bool = false) -> some View {
-        Rectangle()
-            .frame(height: 40)
-            .foregroundStyle(LinearGradient(colors: [
-                .black,
-                Color(vm.getTeamColor(team: team))
-            ],
-                                            startPoint: .trailing,
-                                            endPoint: .leading))
-            .rotation3DEffect(
-                .degrees(rotate ? 180 : 0),
-                                      axis: (x: 0.0, y: 1.0, z: 0.0)
-            )
-            .overlay(
-                HStack {
+        VStack {
+            Rectangle()
+                .frame(width: 30, height: 30)
+                .foregroundStyle(LinearGradient(colors: [
+                    .black,
+                    Color(vm.getTeamColor(team: team))
+                ],
+                                                startPoint: .trailing,
+                                                endPoint: .leading))
+                .rotation3DEffect(
+                    .degrees(rotate ? 180 : 0),
+                    axis: (x: 0.0, y: 1.0, z: 0.0)
+                )
+                .overlay(
                     Image(vm.getTeamLogo(team: team))
                         .resizable()
                         .scaledToFit()
                         .frame(width: 50)
-                        .scaleEffect(1.5)
-                }
-
-            )
-            .shadow(color: .yellow,
-                    radius: 1)
+                        .scaleEffect(1.2)
+                )
+                .shadow(color: .yellow,
+                        radius: 1)
+            Text(team.abbrevName)
+                .font(.extra10)
+        }
     }
 }
 

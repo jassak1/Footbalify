@@ -20,6 +20,7 @@ struct LockSmTeamStandingsView: View {
             Image(vm.getTeamLogo(team: entry.nflTeam.toTeam))
                 .resizable()
                 .scaledToFit()
+                .clipShape(RoundedRectangle(cornerRadius: 20))
                 .opacity(0.3)
             VStack {
                 Text("\(teamStandings.wins) - \(teamStandings.loses)")

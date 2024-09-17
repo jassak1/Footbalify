@@ -132,6 +132,7 @@ struct StandingsView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 30)
+                    .clipShape(RoundedRectangle(cornerRadius: 5))
                 Text(standing.team.abbrevName)
             }.frame(width: geo.size.width/3, alignment: .leading)
                 .font(.extraItalic20)

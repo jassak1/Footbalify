@@ -60,7 +60,7 @@ struct ScheduleView: View {
             .overlay(
                 GeometryReader { geo in
                     HStack {
-                        VStack(alignment: .leading, spacing: 0) {
+                        VStack(alignment: .leading, spacing: 5) {
                             teamItem(team: matchInfo.team1)
                             teamItem(team: matchInfo.team2)
                         }.padding(5)
@@ -97,6 +97,7 @@ struct ScheduleView: View {
             Image("\(team.fullName) \(AppConstant.logo.rawValue)")
                 .resizable()
                 .scaledToFit()
+                .clipShape(RoundedRectangle(cornerRadius: 10))
             HStack {
                 Text(verbatim: team.rawValue.uppercased())
                     .font(.extraItalicCustom(15))

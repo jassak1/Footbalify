@@ -23,7 +23,7 @@ struct DivisionLeadersWidget2View: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 20)
-                    Text(entry.division.toDivision.rawValue)
+                    Text(entry.division.toDivision.baseName)
                         .font(.extraItalic10)
                 }.padding(.bottom, 5)
                     .frame(maxWidth: .infinity,
@@ -87,7 +87,7 @@ struct DivisionLeadersWidget2: Widget {
         }
         .supportedFamilies([.systemMedium])
         .configurationDisplayName(WidgetKind.divisionLeadersMedium1.rawValue)
-        .description("NFL AFC/NFC Division Leaders")
+        .description("Division Leaders")
     }
 
     /// Helper method providing Conference's Gradient Colors conditionally

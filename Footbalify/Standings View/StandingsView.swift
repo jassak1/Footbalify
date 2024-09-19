@@ -31,7 +31,7 @@ struct StandingsView: View {
                                         .resizable()
                                         .scaledToFit()
                                         .frame(width: 30)
-                                    Text("\(Divisions.mainAfc.rawValue) Playoffs")
+                                    Text("\(Divisions.mainAfc.baseName) Playoffs")
                                 }.font(.extra20)
                             })
                             Section(content: {
@@ -46,7 +46,7 @@ struct StandingsView: View {
                                         .resizable()
                                         .scaledToFit()
                                         .frame(width: 30)
-                                    Text("\(Divisions.mainNfc.rawValue) Playoffs")
+                                    Text("\(Divisions.mainNfc.baseName) Playoffs")
                                 }.font(.extra20)
                             })
                         } else {

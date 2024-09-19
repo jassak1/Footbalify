@@ -24,8 +24,8 @@ struct DivisionLeadersWidget1View: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 100)
-                    Text("\(entry.division.toDivision.rawValue) Standings")
-                        .font(.extraCustom(25))
+                    Text("\(entry.division.toDivision.baseName) Div. Standings")
+                        .font(.extraCustom(20))
                         .fixedSize(horizontal: false, vertical: true)
                 }
                 ForEach(vm.getStandings(for: entry.division.toDivision), id: \.team) { standing in
@@ -87,7 +87,7 @@ struct DivisionLeadersWidget1: Widget {
         }
         .supportedFamilies([.systemLarge])
         .configurationDisplayName(WidgetKind.divisionLeadersLarge1.rawValue)
-        .description("NFL AFC/NFC Division Leaders")
+        .description("Division Leaders")
     }
 
     /// Helper method providing Conference's Gradient Colors conditionally

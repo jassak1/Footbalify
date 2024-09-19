@@ -29,14 +29,14 @@ class StandingsVM: ObservableObject {
         switch selection {
         case .division:
             standingsActual.removeAll()
-            let afcEast = [Divisions.afcEast.rawValue: standingsProvider.getStandings(for: .afcEast, standings: rawStandings)]
-            let afcNorth = [Divisions.afcNorth.rawValue: standingsProvider.getStandings(for: .afcNorth, standings: rawStandings)]
-            let afcSouth = [Divisions.afcSouth.rawValue: standingsProvider.getStandings(for: .afcSouth, standings: rawStandings)]
-            let afcWest = [Divisions.afcWest.rawValue: standingsProvider.getStandings(for: .afcWest, standings: rawStandings)]
-            let nfcEast = [Divisions.nfcEast.rawValue: standingsProvider.getStandings(for: .nfcEast, standings: rawStandings)]
-            let nfcNorth = [Divisions.nfcNorth.rawValue: standingsProvider.getStandings(for: .nfcNorth, standings: rawStandings)]
-            let nfcSouth = [Divisions.nfcSouth.rawValue: standingsProvider.getStandings(for: .nfcSouth, standings: rawStandings)]
-            let nfcWest = [Divisions.nfcWest.rawValue: standingsProvider.getStandings(for: .nfcWest, standings: rawStandings)]
+            let afcEast = [Divisions.afcEast.baseName: standingsProvider.getStandings(for: .afcEast, standings: rawStandings)]
+            let afcNorth = [Divisions.afcNorth.baseName: standingsProvider.getStandings(for: .afcNorth, standings: rawStandings)]
+            let afcSouth = [Divisions.afcSouth.baseName: standingsProvider.getStandings(for: .afcSouth, standings: rawStandings)]
+            let afcWest = [Divisions.afcWest.baseName: standingsProvider.getStandings(for: .afcWest, standings: rawStandings)]
+            let nfcEast = [Divisions.nfcEast.baseName: standingsProvider.getStandings(for: .nfcEast, standings: rawStandings)]
+            let nfcNorth = [Divisions.nfcNorth.baseName: standingsProvider.getStandings(for: .nfcNorth, standings: rawStandings)]
+            let nfcSouth = [Divisions.nfcSouth.baseName: standingsProvider.getStandings(for: .nfcSouth, standings: rawStandings)]
+            let nfcWest = [Divisions.nfcWest.baseName: standingsProvider.getStandings(for: .nfcWest, standings: rawStandings)]
             standingsActual.insert(contentsOf: afcEast, at: 0)
             standingsActual.insert(contentsOf: afcNorth, at: 1)
             standingsActual.insert(contentsOf: afcSouth, at: 2)
@@ -47,8 +47,8 @@ class StandingsVM: ObservableObject {
             standingsActual.insert(contentsOf: nfcWest, at: 7)
         case .conference:
             standingsActual.removeAll()
-            let afcFull = [Divisions.mainAfc.rawValue: standingsProvider.getStandings(for: .mainAfc, standings: rawStandings)]
-            let nfcFull = [Divisions.mainNfc.rawValue: standingsProvider.getStandings(for: .mainNfc, standings: rawStandings)]
+            let afcFull = [Divisions.mainAfc.baseName: standingsProvider.getStandings(for: .mainAfc, standings: rawStandings)]
+            let nfcFull = [Divisions.mainNfc.baseName: standingsProvider.getStandings(for: .mainNfc, standings: rawStandings)]
             standingsActual.insert(contentsOf: afcFull, at: 0)
             standingsActual.insert(contentsOf: nfcFull, at: 1)
         case .playOff:
@@ -63,29 +63,28 @@ class StandingsVM: ObservableObject {
     ///
     ///  - Returns: String describing Division's Logo
     func getDivisionsLogo(division: String) -> String {
-        let division = Divisions(rawValue: division) ?? .mainAfc
         return switch division {
-        case .mainAfc:
+        case Divisions.mainAfc.baseName:
             "\(Divisions.mainAfc.rawValue) \(AppConstant.logo.rawValue)"
-        case .mainNfc:
+        case Divisions.mainNfc.baseName:
             "\(Divisions.mainNfc.rawValue) \(AppConstant.logo.rawValue)"
-        case .afcNorth:
+        case Divisions.afcNorth.baseName:
             "\(Divisions.mainAfc.rawValue) \(AppConstant.logo.rawValue)"
-        case .afcSouth:
+        case Divisions.afcSouth.baseName:
             "\(Divisions.mainAfc.rawValue) \(AppConstant.logo.rawValue)"
-        case .afcEast:
+        case Divisions.afcEast.baseName:
             "\(Divisions.mainAfc.rawValue) \(AppConstant.logo.rawValue)"
-        case .afcWest:
+        case Divisions.afcWest.baseName:
             "\(Divisions.mainAfc.rawValue) \(AppConstant.logo.rawValue)"
-        case .nfcNorth:
+        case Divisions.nfcNorth.baseName:
             "\(Divisions.mainNfc.rawValue) \(AppConstant.logo.rawValue)"
-        case .nfcSouth:
+        case Divisions.nfcSouth.baseName:
             "\(Divisions.mainNfc.rawValue) \(AppConstant.logo.rawValue)"
-        case .nfcEast:
+        case Divisions.nfcEast.baseName:
             "\(Divisions.mainNfc.rawValue) \(AppConstant.logo.rawValue)"
-        case .nfcWest:
+        case Divisions.nfcWest.baseName:
             "\(Divisions.mainNfc.rawValue) \(AppConstant.logo.rawValue)"
-        case .other:
+        default:
             "\(Divisions.other.rawValue) \(AppConstant.logo.rawValue)"
         }
     }

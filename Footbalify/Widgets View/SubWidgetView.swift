@@ -49,7 +49,7 @@ struct SubWidgetView: View {
         .toolbar {
             ToolbarItem(placement: .principal) {
                 Text(widget.rawValue)
-                    .font(.extra20)
+                    .font(.extraCustom(15))
                     .fixedSize(horizontal: false,
                                vertical: true)
             }

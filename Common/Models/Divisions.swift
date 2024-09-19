@@ -21,3 +21,32 @@ enum Divisions: String {
     case nfcWest = "NFC West"
     case other = "TBD"
 }
+
+extension Divisions {
+    var baseName: String {
+        switch self {
+        case .mainAfc:
+            "American"
+        case .mainNfc:
+            "National"
+        case .afcNorth:
+            "American North"
+        case .afcSouth:
+            "American South"
+        case .afcEast:
+            "American East"
+        case .afcWest:
+            "American West"
+        case .nfcNorth:
+            "National North"
+        case .nfcSouth:
+            "National South"
+        case .nfcEast:
+            "National East"
+        case .nfcWest:
+            "National West"
+        case .other:
+            "TBD"
+        }
+    }
+}

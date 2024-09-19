@@ -27,7 +27,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>AFC</string>
+					<string>American</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>Kk83A2</string>
 					<key>INEnumValueIndex</key>
@@ -37,7 +37,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>NFC</string>
+					<string>National</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>pTBW9Y</string>
 					<key>INEnumValueIndex</key>
@@ -49,7 +49,7 @@
 		</dict>
 		<dict>
 			<key>INEnumDisplayName</key>
-			<string>Div Team</string>
+			<string>Division</string>
 			<key>INEnumDisplayNameID</key>
 			<string>Bv6CLu</string>
 			<key>INEnumGeneratesHeader</key>
@@ -70,7 +70,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>AFC East</string>
+					<string>American East</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>TWdAKx</string>
 					<key>INEnumValueIndex</key>
@@ -80,7 +80,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>AFC North</string>
+					<string>American North</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>awV6Wj</string>
 					<key>INEnumValueIndex</key>
@@ -90,7 +90,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>AFC South</string>
+					<string>American South</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>Gtt9c3</string>
 					<key>INEnumValueIndex</key>
@@ -100,7 +100,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>AFC West</string>
+					<string>American West</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>3TXtsO</string>
 					<key>INEnumValueIndex</key>
@@ -110,7 +110,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>NFC East</string>
+					<string>National East</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>HqMxdB</string>
 					<key>INEnumValueIndex</key>
@@ -120,7 +120,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>NFC North</string>
+					<string>National North</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>ifN4ZX</string>
 					<key>INEnumValueIndex</key>
@@ -130,7 +130,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>NFC South</string>
+					<string>National South</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>ph0Jfc</string>
 					<key>INEnumValueIndex</key>
@@ -140,7 +140,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>NFC West</string>
+					<string>National West</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>DORyI8</string>
 					<key>INEnumValueIndex</key>
@@ -152,7 +152,7 @@
 		</dict>
 		<dict>
 			<key>INEnumDisplayName</key>
-			<string>NFL Team</string>
+			<string>Team</string>
 			<key>INEnumDisplayNameID</key>
 			<string>jD4bw4</string>
 			<key>INEnumGeneratesHeader</key>
@@ -501,9 +501,9 @@
 	<key>INIntentDefinitionSystemVersion</key>
 	<string>23F79</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>15C65</string>
+	<string>16A242d</string>
 	<key>INIntentDefinitionToolsVersion</key>
-	<string>15.1</string>
+	<string>16.0</string>
 	<key>INIntents</key>
 	<array>
 		<dict>
@@ -727,7 +727,7 @@
 					<key>INIntentParameterConfigurable</key>
 					<true/>
 					<key>INIntentParameterDisplayName</key>
-					<string>NFL Team</string>
+					<string>Select Team</string>
 					<key>INIntentParameterDisplayNameID</key>
 					<string>Yaloce</string>
 					<key>INIntentParameterDisplayPriority</key>

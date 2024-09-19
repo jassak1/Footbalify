@@ -57,7 +57,7 @@ struct LockSmTeamStandingsWidget: Widget {
         }
                             .supportedFamilies([.accessoryCircular])
                             .configurationDisplayName(WidgetKind.lockTeamStandingsSm.rawValue)
-                            .description("Circular Widget with specific Team's NFL Standings")
+                            .description("Circular Widget with specific Team's Standings")
     }
 }
 

@@ -23,7 +23,7 @@ struct PlayoffWidget3View: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 30)
-                    Text(entry.conference.toDivision.rawValue + " Conference Leaders")
+                    Text(entry.conference.toDivision.baseName + " Conference Leaders")
                         .font(.extra10)
                 }.frame(maxWidth: .infinity,
                         alignment: .leading)
@@ -110,7 +110,7 @@ struct PlayoffWidget3: Widget {
         }
         .supportedFamilies([.systemMedium])
         .configurationDisplayName(WidgetKind.playoffMedium3.rawValue)
-        .description("NFL Conference Playoffs Medium Widget")
+        .description("Conference Playoffs Medium Widget")
     }
 }
 

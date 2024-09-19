@@ -24,9 +24,6 @@ struct LockMdTeamStandingsView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 10)
-                        Text(teamStanding.team.division.rawValue)
-                            .font(.extraItalic10)
-                            .foregroundStyle(teamStanding.team.conference == .mainAfc ? .red : .blue)
                     }
                     Text(teamStanding.team.rawValue.uppercased())
                         .font(.extra10)
@@ -75,7 +72,7 @@ struct LockMdTeamStandingsWidget: Widget {
         }
                             .supportedFamilies([.accessoryRectangular])
                             .configurationDisplayName(WidgetKind.lockTeamStandingsMd.rawValue)
-                            .description("Rectangular Widget with specific Team's NFL Standings")
+                            .description("Rectangular Widget with specific Team's Standings")
     }
 }
 

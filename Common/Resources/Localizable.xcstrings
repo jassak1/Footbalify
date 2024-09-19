@@ -20,10 +20,10 @@
         }
       }
     },
-    "%@ Playoffs" : {
+    "%@ Div. Standings" : {
 
     },
-    "%@ Standings" : {
+    "%@ Playoffs" : {
 
     },
     "|" : {
@@ -131,16 +131,28 @@
     "Circular Widget Countdown to upcoming Super Bowl" : {
 
     },
-    "Circular Widget with specific Team's NFL Standings" : {
+    "Circular Widget with specific Team's Standings" : {
 
     },
     "CONF" : {
+
+    },
+    "Conference Playoffs Large Widget" : {
+
+    },
+    "Conference Playoffs Medium Widget" : {
 
     },
     "DIV" : {
 
     },
     "DIVISION LEADER" : {
+
+    },
+    "Division Leader Team" : {
+
+    },
+    "Division Leaders" : {
 
     },
     "FAQ" : {
@@ -152,7 +164,7 @@
     "FOOTBALIFY" : {
 
     },
-    "Footbalify is the ultimate app for NFL enthusiasts, offering comprehensive access to the latest schedules and standings. It provides up to date game details, including dates and times, making it easy to stay updated on all the action. Users can effortlessly track their favorite teams' performance with up-to-date standings for all NFL divisions and conferences. \n\nThe app also features customizable Widgets for both Home Screen and Lock Screen, offering at-a-glance information on upcoming games and current standings. With a sleek and user-friendly interface, Footbalify ensures navigating through NFL schedules and standings is a seamless experience.\n\nFootbalify is designed to enhance the overall NFL experience, providing quick, reliable updates and ensuring fans never miss a moment of their favorite sport." : {
+    "Footbalify is the ultimate app for National Football enthusiasts, offering comprehensive access to the latest schedules and standings. It provides up to date game details, including dates and times, making it easy to stay updated on all the action. Users can effortlessly track their favorite teams' performance with up-to-date standings for all National Football divisions and conferences. \n\nThe app also features customizable Widgets for both Home Screen and Lock Screen, offering at-a-glance information on upcoming games and current standings. With a sleek and user-friendly interface, Footbalify ensures navigating through National Football schedules and standings is a seamless experience.\n\nFootbalify is designed to enhance the overall National Football experience, providing quick, reliable updates and ensuring fans never miss a moment of their favorite sport." : {
 
     },
     "FUNDING" : {
@@ -344,22 +356,10 @@
     "Medium Widgets" : {
 
     },
-    "NFL AFC/NFC Division Leader Team" : {
-
-    },
-    "NFL AFC/NFC Division Leaders" : {
-
-    },
-    "NFL Conference Playoffs Large Widget" : {
-
-    },
-    "NFL Conference Playoffs Medium Widget" : {
-
-    },
-    "NFL Playoff Road to Super Bowl LIX" : {
-
-    },
     "OK" : {
+
+    },
+    "Playoff Road to Super Bowl LIX" : {
 
     },
     "Privacy policy" : {
@@ -445,7 +445,7 @@
         }
       }
     },
-    "Rectangular Widget with specific Team's NFL Standings" : {
+    "Rectangular Widget with specific Team's Standings" : {
 
     },
     "Rectangular Widget with specific Team's Weekly schedule" : {

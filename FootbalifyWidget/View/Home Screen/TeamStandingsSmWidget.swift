@@ -31,8 +31,8 @@ struct TeamStandingsSmWidgetView: View {
                             .font(.extraCustom(7))
                     }
                     VStack(alignment: .leading, spacing: 0) {
-                        Text(teamStanding.team.division.rawValue)
-                            .font(.extraItalicCustom(13))
+                        Text(teamStanding.team.division.baseName)
+                            .font(.extraItalic10)
                             .foregroundStyle(teamStanding.team.conference == .mainAfc ? .red : .blue)
                         Text(teamStanding.team.rawValue.uppercased())
                             .font(.extra10)

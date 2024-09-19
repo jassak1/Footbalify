@@ -110,7 +110,7 @@ struct PlayoffWidget1: Widget {
         }
         .supportedFamilies([.systemLarge])
         .configurationDisplayName(WidgetKind.playoffLarge1.rawValue)
-        .description("NFL Conference Playoffs Large Widget")
+        .description("Conference Playoffs Large Widget")
     }
 }
 

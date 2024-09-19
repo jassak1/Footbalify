@@ -27,8 +27,8 @@ struct DivisionLeaderWidgetView: View {
                         .scaledToFit()
                         .frame(width: 30)
                     VStack(alignment: .leading) {
-                        Text(entry.division.toDivision.rawValue)
-                            .font(.extraItalic10)
+                        Text(entry.division.toDivision.baseName)
+                            .font(.extraItalicCustom(8))
                         Text("DIVISION LEADER")
                             .font(.regularCustom(7))
                     }
@@ -78,7 +78,7 @@ struct DivisionLeaderWidget: Widget {
         }
                             .supportedFamilies([.systemSmall])
                             .configurationDisplayName(WidgetKind.divisionLeaderSmall.rawValue)
-                            .description("NFL AFC/NFC Division Leader Team")
+                            .description("Division Leader Team")
     }
 }
 

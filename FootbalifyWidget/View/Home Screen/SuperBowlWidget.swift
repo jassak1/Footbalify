@@ -121,7 +121,7 @@ struct SuperBowlWidget: Widget {
         }
                             .supportedFamilies([.systemMedium])
                             .configurationDisplayName(WidgetKind.superBowlMedium.rawValue)
-                            .description("NFL Playoff Road to Super Bowl LIX")
+                            .description("Playoff Road to Super Bowl LIX")
     }
 }
 

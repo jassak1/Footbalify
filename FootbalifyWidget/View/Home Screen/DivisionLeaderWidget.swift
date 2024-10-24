@@ -38,12 +38,20 @@ struct DivisionLeaderWidgetView: View {
                         .font(.extra10)
                     Text("\(entryTeam.wins) - \(entryTeam.loses)")
                         .font(.regItalic10)
-                    Image(vm.getTeamLogo(team: entryTeam.team))
-                        .resizable()
-                        .scaledToFit()
-                        .padding(5)
-                        .scaleEffect(1.2)
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                    if vm.useColors {
+                        LinearGradient(colors: [Color(vm.getTeamColor(team: entryTeam.team)), .black],
+                                       startPoint: .top,
+                                       endPoint: .bottom)
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
+                            .padding(5)
+                    } else {
+                        Image(vm.getTeamLogo(team: entryTeam.team))
+                            .resizable()
+                            .scaledToFit()
+                            .padding(5)
+                            .scaleEffect(1.2)
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                    }
                 }
             }
         }.foregroundStyle(.white)

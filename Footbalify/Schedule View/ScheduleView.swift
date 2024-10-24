@@ -48,6 +48,9 @@ struct ScheduleView: View {
                 .sheet(isPresented: $vm.showSheet) {
                     IapView(vm: factory.makeIapVm())
                 }
+                .onAppear {
+                    vm.onAppear()
+                }
         }
     }
 
@@ -94,10 +97,16 @@ struct ScheduleView: View {
     /// Team's Hstack with Logo and Team Name SubView
     private func teamItem(team: Teams) -> some View {
         HStack {
-            Image("\(team.fullName) \(AppConstant.logo.rawValue)")
-                .resizable()
-                .scaledToFit()
-                .clipShape(RoundedRectangle(cornerRadius: 10))
+            if vm.useColors {
+                Color("\(team.fullName) \(AppConstant.color.rawValue)")
+                    .frame(maxWidth: 50, maxHeight: .infinity)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+            } else {
+                Image("\(team.fullName) \(AppConstant.logo.rawValue)")
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+            }
             HStack {
                 Text(verbatim: team.rawValue.uppercased())
                     .font(.extraItalicCustom(15))

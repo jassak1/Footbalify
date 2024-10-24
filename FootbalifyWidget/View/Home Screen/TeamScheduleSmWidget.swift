@@ -18,11 +18,17 @@ struct TeamScheduleSmWidgetView: View {
                 Color.colorMainBg.ignoresSafeArea()
             }
             HStack {
-                Image(vm.getTeamLogo(team: entry.team.toTeam))
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 25)
-                    .clipShape(RoundedRectangle(cornerRadius: 5))
+                if vm.useColors {
+                    Color(vm.getTeamColor(team: entry.team.toTeam))
+                        .frame(width: 25, height: 25)
+                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                } else {
+                    Image(vm.getTeamLogo(team: entry.team.toTeam))
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 25)
+                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                }
                 Spacer()
                 Text(entry.currWeek.rawValue)
                     .fixedSize(horizontal: true,
@@ -79,11 +85,13 @@ struct TeamScheduleSmWidgetView: View {
                     axis: (x: 0.0, y: 1.0, z: 0.0)
                 )
                 .overlay(
-                    Image(vm.getTeamLogo(team: team))
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 50)
-                        .scaleEffect(1.2)
+                    OptionallyHidden(isHidden: vm.useColors) {
+                        Image(vm.getTeamLogo(team: team))
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 50)
+                            .scaleEffect(1.2)
+                    }
                 )
                 .shadow(color: .yellow,
                         radius: 1)

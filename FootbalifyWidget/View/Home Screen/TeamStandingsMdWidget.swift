@@ -40,12 +40,22 @@ struct TeamStandingsMdWidgetView: View {
                 }.frame(maxWidth: .infinity,
                         maxHeight: .infinity,
                     alignment: .topLeading)
-                Image(vm.getTeamLogo(team: teamStanding.team))
-                    .resizable()
-                    .scaledToFit()
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .shadow(color: .black,
-                            radius: 30)
+                if vm.useColors {
+                    Color(vm.getTeamColor(team: teamStanding.team))
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                        .shadow(color: .white, radius: 5)
+                        .overlay(
+                            Text(teamStanding.team.abbrevName)
+                                .font(.extra40)
+                            )
+                } else {
+                    Image(vm.getTeamLogo(team: teamStanding.team))
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                        .shadow(color: .black,
+                                radius: 30)
+                }
             }
         }
         .foregroundStyle(.white)
@@ -88,5 +98,5 @@ struct TeamStandingsMdWidget: Widget {
     TeamStandingsMdWidget()
 } timeline: {
     TeamStandingsEntry(date: Date(),
-                       nflTeam: .packers)
+                       nflTeam: .panthers)
 }

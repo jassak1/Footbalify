@@ -18,7 +18,9 @@ class StandingsVM: ObservableObject {
     @Published var standingsActual = [Dictionary<String, [StandingsInfo]>.Element]()
     /// Observable property holding currently selected Standings switch
     @Published var standingSelection = StandingsType.division
-
+    /// Boolean property indicating whether Color shall be used over NFL Team Logos
+    @Published var useColors = UserDefaults.getValue(for: .useColors, defaultValue: false)
+    
     /// Method responsible for displaying specific NFL Standings
     ///
     ///  - Parameters:
@@ -101,6 +103,11 @@ class StandingsVM: ObservableObject {
         return scheduleProvider.getSchedule(baseSchedule: baseSchedule,
                                             week: week,
                                             conference: conference)
+    }
+
+    /// Method called upon View Appears
+    func onAppear() {
+        useColors = UserDefaults.getValue(for: .useColors, defaultValue: false)
     }
 
     // MARK: - Initialiser

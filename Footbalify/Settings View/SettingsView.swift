@@ -55,6 +55,12 @@ struct SettingsView: View {
                                       withArrow: false,
                                       handle: "@FootbalifyApp")
                         })
+                        HStack {
+                            labelItem(label: "Hide team logos",
+                                      icon: "rectangle.on.rectangle.slash.circle.fill",
+                                      withArrow: false)
+                            Toggle(isOn: $vm.useColors, label: {})
+                        }
                         Label(
                             title: { Text("Leave a rating") },
                             icon: { Image(systemName: "star.circle.fill").font(.headline) }
@@ -143,6 +149,7 @@ struct SettingsView: View {
             listItem(q: "q2", a: "a2")
             listItem(q: "q3", a: "a3")
             listItem(q: "q4", a: "a4")
+            listItem(q: "q5", a: "a5")
             listItem(q: "q6", a: "a6")
             listItem(q: "q7", a: "a7")
         }.navigationTitle("FAQ")

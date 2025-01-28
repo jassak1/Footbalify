@@ -73,6 +73,9 @@ struct StandingsView: View {
                         .scrollContentBackground(.hidden)
                         .background(Color.colorMainBg)
                         .scrollIndicators(.hidden)
+                        .onAppear {
+                            vm.onAppear()
+                        }
                 }
             }.navigationTitle("Standings")
         }
@@ -128,11 +131,17 @@ struct StandingsView: View {
                               geo: GeometryProxy) -> some View {
         HStack {
             HStack {
-                Image("\(standing.team.fullName) \(AppConstant.logo.rawValue)")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 30)
-                    .clipShape(RoundedRectangle(cornerRadius: 5))
+                if vm.useColors {
+                    Color("\(standing.team.fullName) \(AppConstant.color.rawValue)")
+                        .frame(maxWidth: 30, maxHeight: .infinity)
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                } else {
+                    Image("\(standing.team.fullName) \(AppConstant.logo.rawValue)")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 30)
+                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                }
                 Text(standing.team.abbrevName)
             }.frame(width: geo.size.width/3, alignment: .leading)
                 .font(.extraItalic20)

@@ -79,7 +79,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Once the 2024 NFL Season will Kick off, the 2024 Standings will be provided."
+            "value" : "The original Team Logos are copyrighted. To replace the custom Logos with Team Colours, proceed to Settings and switch On the Hide team logos toggle."
           }
         }
       }
@@ -418,7 +418,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Standings Data are from 2023 Season, how to display 2024 Season?"
+            "value" : "Why are there custom Team logos?"
           }
         }
       }

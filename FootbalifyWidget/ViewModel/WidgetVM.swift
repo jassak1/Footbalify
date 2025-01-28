@@ -14,6 +14,8 @@ class WidgetVM: ObservableObject {
     var scheduleProvider: ScheduleProviderProto
     /// StandingsProvider reference
     var standingsProvider: StandingsProviderProto
+    /// Boolean property indicating whether Color shall be used over NFL Team Logos
+    var useColors = UserDefaults.getValue(for: .useColors, defaultValue: false)
 
     // MARK: - Methods
     /// Method responsible for retrieval of Playoff's schedule based on conference and a Week

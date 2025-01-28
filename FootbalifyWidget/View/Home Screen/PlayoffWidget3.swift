@@ -43,12 +43,22 @@ struct PlayoffWidget3View: View {
                                 .fixedSize(horizontal: true, vertical: false)
                                 .font(.extraItalicCustom(15))
                             Spacer()
-                            Image(vm.getTeamLogo(team: vm.getDivisionLeader(for: entry.conference.toDivision).team))
-                                .resizable()
-                                .scaledToFit()
-                                .clipShape(RoundedRectangle(cornerRadius: 5))
-                                .padding(.trailing, 5)
-                                .padding(2)
+                            if vm.useColors {
+                                Color(vm.getTeamColor(team: vm.getDivisionLeader(for: entry.conference.toDivision).team))
+                                    .clipShape(RoundedRectangle(cornerRadius: 5))
+                                    .frame(width: 20)
+                                    .shadow(color: .black,
+                                            radius: 2)
+                                    .padding(5)
+
+                            } else {
+                                Image(vm.getTeamLogo(team: vm.getDivisionLeader(for: entry.conference.toDivision).team))
+                                    .resizable()
+                                    .scaledToFit()
+                                    .clipShape(RoundedRectangle(cornerRadius: 5))
+                                    .padding(.trailing, 5)
+                                    .padding(2)
+                            }
                         }
                     )
                 LazyVGrid(columns: [GridItem(),
@@ -72,12 +82,21 @@ struct PlayoffWidget3View: View {
                                     Text(standing.team.abbrevName)
                                         .font(.extraCustom(7))
                                         .rotationEffect(.degrees(270))
-                                    Image(vm.getTeamLogo(team: standing.team))
-                                        .resizable()
-                                        .scaledToFit()
-                                        .clipShape(RoundedRectangle(cornerRadius: 5))
-                                        .padding(.trailing, 5)
-                                        .padding(2)
+                                    if vm.useColors {
+                                        Color(vm.getTeamColor(team: standing.team))
+                                            .clipShape(RoundedRectangle(cornerRadius: 5))
+                                            .frame(width: 20)
+                                            .shadow(color: .black,
+                                                    radius: 2)
+                                            .padding(5)
+                                    } else {
+                                        Image(vm.getTeamLogo(team: standing.team))
+                                            .resizable()
+                                            .scaledToFit()
+                                            .clipShape(RoundedRectangle(cornerRadius: 5))
+                                            .padding(.trailing, 5)
+                                            .padding(2)
+                                    }
                                 }
                             )
                     }

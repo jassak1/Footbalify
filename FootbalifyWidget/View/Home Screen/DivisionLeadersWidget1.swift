@@ -39,11 +39,19 @@ struct DivisionLeadersWidget1View: View {
                         .overlay(
                             HStack {
                                 HStack {
-                                    Image(vm.getTeamLogo(team: standing.team))
-                                        .resizable()
-                                        .scaledToFit()
-                                        .clipShape(RoundedRectangle(cornerRadius: 10))
-                                        .padding(5)
+                                    if vm.useColors {
+                                        Color(vm.getTeamColor(team: standing.team))
+                                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                                            .frame(width: 50,
+                                                   height: 50)
+
+                                    } else {
+                                        Image(vm.getTeamLogo(team: standing.team))
+                                            .resizable()
+                                            .scaledToFit()
+                                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                                            .padding(5)
+                                    }
                                     Text(standing.team.rawValue.uppercased())
                                         .font(.extraCustom(15))
                                 }.frame(maxWidth: .infinity,

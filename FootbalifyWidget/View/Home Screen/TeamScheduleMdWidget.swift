@@ -18,11 +18,17 @@ struct TeamScheduleMdWidgetView: View {
                 Color.colorMainBg.ignoresSafeArea()
             }
             HStack {
-                Image(vm.getTeamLogo(team: entry.team.toTeam))
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 25)
-                    .clipShape(RoundedRectangle(cornerRadius: 5))
+                if vm.useColors {
+                    Color(vm.getTeamColor(team: entry.team.toTeam))
+                        .frame(width: 25, height: 25)
+                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                } else {
+                    Image(vm.getTeamLogo(team: entry.team.toTeam))
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 25)
+                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                }
                 Text(entry.currWeek.rawValue)
             }
             .frame(maxWidth: .infinity,
@@ -75,15 +81,17 @@ struct TeamScheduleMdWidgetView: View {
                                             endPoint: .leading))
             .overlay(
                 HStack {
-                    Image(vm.getTeamLogo(team: team))
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 50)
-                        .scaleEffect(1.5)
-                        .rotation3DEffect(
-                            .degrees(rotate ? 180 : 0),
-                                                  axis: (x: 0.0, y: 1.0, z: 0.0)
-                        )
+                    if !vm.useColors {
+                        Image(vm.getTeamLogo(team: team))
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 50)
+                            .scaleEffect(1.5)
+                            .rotation3DEffect(
+                                .degrees(rotate ? 180 : 0),
+                                axis: (x: 0.0, y: 1.0, z: 0.0)
+                            )
+                    }
                     Spacer()
                     Text(team.abbrevName)
                         .font(.extra20)

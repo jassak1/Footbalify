@@ -20,6 +20,14 @@ class ScheduleVM: ObservableObject {
     @Published var selectedWeek: ScheduleTitle = .week1
     /// Boolean observer indicating whether to display InApp Screen's sheet
     @Published var showSheet = false
+    /// Boolean property indicating whether Color shall be used over NFL Team Logos
+    @Published var useColors = UserDefaults.getValue(for: .useColors, defaultValue: false)
+
+    // MARK: - Public methods
+    /// Method called upon View Appears
+    func onAppear() {
+        useColors = UserDefaults.getValue(for: .useColors, defaultValue: false)
+    }
 
     // MARK: - Private methods
     /// Method responsible for loading Week's Schedule/Scores

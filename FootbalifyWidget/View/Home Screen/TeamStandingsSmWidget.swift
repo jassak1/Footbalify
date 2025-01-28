@@ -38,10 +38,19 @@ struct TeamStandingsSmWidgetView: View {
                             .font(.extra10)
                     }
                 }
-                Image(vm.getTeamLogo(team: teamStanding.team))
-                    .resizable()
-                    .scaledToFit()
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                if vm.useColors {
+                    Color(vm.getTeamColor(team: teamStanding.team))
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                        .overlay(
+                            Text(teamStanding.team.abbrevName)
+                                .font(.extra30)
+                        )
+                } else {
+                    Image(vm.getTeamLogo(team: teamStanding.team))
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                }
             }
         }.foregroundStyle(.white)
             .dynamicTypeSize(.medium)
